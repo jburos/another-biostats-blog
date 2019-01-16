@@ -26,7 +26,7 @@ paginate = 10
 disqusShortname = "Another Biostats Blog"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = "UA-125597130-1"
+#googleAnalytics = "UA-125597130-1"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -73,8 +73,8 @@ enableGitInfo = true
   #office_hours = "Monday 10:00 to 13:00 or email for appointment"
   #phone = "888 888 88 88"
   #skype = "jackiburos"
-  telegram = "jackinovik"
-  twitter = "jackiburos"
+  #telegram = "jackinovik"
+  #twitter = "jackiburos"
 
   # Enable Keybase in Contact widget by entering your keybase.io username.
   keybase = ""
