@@ -9,7 +9,7 @@ title = "Recent Publications"
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 30
+weight = 20
 
 # Number of publications to list.
 count = 6
@@ -19,6 +19,7 @@ count = 6
 #   1 = Detailed
 #   2 = APA
 #   3 = MLA
+#   4 = Stream
 list_format = 0
 
 # Filter by publication type.
@@ -35,4 +36,3 @@ publication_type = "-1"
 # Exclude publications that are shown in the Selected Publications widget?
 exclude_selected = false
 +++
-
