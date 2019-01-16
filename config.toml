@@ -48,6 +48,7 @@ enableGitInfo = true
   hrefTargetBlank = true  # `true` opens external links in a new tab.
   fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
+  extensions = ["backslashLineBreak"]
 
 [params]
   # Color theme.
@@ -76,16 +77,12 @@ enableGitInfo = true
   #telegram = "jackinovik"
   #twitter = "jackiburos"
 
-  # Enable Keybase in Contact widget by entering your keybase.io username.
-  keybase = ""
+  # Enter an optional link for booking appointments (e.g. calendly.com).
+  appointment_url = ""
 
   # Discussion link (e.g. link to a forum, mailing list, or chat).
   #   Uncomment line below to use.
   #   discussion = { name = "Discuss", url = "https://discourse.gohugo.io" }
-
-  # Diplay a logo in navigation bar rather than title (optional).
-  #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
-  logo = ""
 
   # Enable/disable map in Contact widget.
   # To show your address on a map in the contact widget, you need to enter your latitude, longitude and choose
@@ -107,6 +104,31 @@ enableGitInfo = true
   latitude = "37.4275"
   longitude = "-122.1697"
   zoom = 15
+
+  # SITE SETUP
+
+  # Color theme.
+  #   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `cupcake`.
+  color_theme = "default"
+  # Enable users to switch between day and night mode?
+  day_night = true
+
+  # Font style.
+  #   Choose from `default`, `classic`, or `playfair`.
+  font = "default"
+
+  # Description for social sharing and search engines. If undefined, author role is used in place.
+  description = ""
+
+  # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
+  sharing_image = ""
+
+  # Twitter username (without @). Used when a vistor shares your site on Twitter.
+  twitter = ""
+
+  # Diplay a logo in navigation bar rather than title (optional).
+  #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
+  logo = ""
 
   # Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
@@ -202,12 +224,25 @@ enableGitInfo = true
     # List publications and talks related to the project?
     list_children = true
 
+    # Post list format.
+    #   0 = Simple
+    #   1 = Detailed
+    #   2 = Stream
+    post_format = 2
+
     # Publication list format.
     #   0 = Simple
     #   1 = Detailed
     #   2 = APA
     #   3 = MLA
-    publication_format = 3
+    #   4 = Stream
+    publication_format = 4
+
+    # Talk list format.
+    #   0 = Simple
+    #   1 = Detailed
+    #   2 = Stream
+    talk_format = 2
 
   # Social/Academic Networking
   #
@@ -246,18 +281,18 @@ enableGitInfo = true
     icon = "github"
     icon_pack = "fab"
     link = "//github.com/jburos"
-    
+
   [[params.social]]
     icon = "orcid"
     icon_pack = "ai"
     link = "//orcid.org/0000-0001-9588-4889"
-  
+
   [[params.social]]
     icon = "researchgate"
     icon_pack = "ai"
     link = "//www.researchgate.net/profile/Jacki_Buros2"
-  
-    
+
+
 
   # Link to a PDF of your resume/CV from the About widget.
   # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
