@@ -51,14 +51,6 @@ enableGitInfo = true
   extensions = ["backslashLineBreak"]
 
 [params]
-  # Color theme.
-  #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "ocean"
-
-  # Font style.
-  #   Choose from `default`, `classic`, or `playfair`.
-  font = "default"
-
   # Your details.
   name = "Jacqueline Buros Novik"
   role = "Computational Biologist / Biostatistician"
@@ -319,10 +311,10 @@ enableGitInfo = true
   url = "#posts"
   weight = 2
 
-#[[menu.main]]
-#  name = "Talks"
-#  url = "#talks"
-#  weight = 4
+[[menu.main]]
+  name = "Talks"
+  url = "#talks"
+  weight = 4
 
 [[menu.main]]
   name = "Publications"
