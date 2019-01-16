@@ -1,0 +1,11 @@
++++
+title = "Association of Platelet Counts on Presentation and Clinical Outcomes in ST-Elevation Myocardial Infarction (from the TIMI Trials)"
+date = 2006-01-01
+authors = ["H.Q. Ly", "A.J. Kirtane", "S.A. Murphy", "J. Buros", "C.P. Cannon", "E. Braunwald", "C.M. Gibson"]
+publication_types = ["2"]
+abstract = "Platelet activation and aggregation play pivotal roles in the thrombotic process of acute coronary syndromes. However, data regarding platelet count and its association with clinical outcomes in the setting of ST-elevation myocardial infarction (STEMI) are limited. We hypothesized that higher platelet counts on presentation would be associated with poorer clinical outcomes. Data from 10,793 patients with STEMI in the Thrombolysis In Myocardial Infarction (TIMI) trials database were analyzed. Mean platelet count on presentation was 254.8 × 103/$mu$l. Higher platelet counts were associated with higher rates of adverse clinical outcomes at 30 days. In a multivariable analysis that adjusted for confounders of platelet counts (age, gender, weight, diabetes, and smoking), higher platelet counts remained associated with an increased risk of the combined end point of death, reinfarction, and congestive heart failure. With a reference group of platelet counts textless200 × 103/$mu$l, the multivariable odds ratios were 1.22 (95% confidence interval 1.05 to 1.42, p = 0.009) for platelet counts of 201 to 300 × 103/$mu$l, 1.37 (95% confidence interval 1.11 to 1.68, p = 0.002) for counts of 301 to 400 × 103/$mu$l, and 1.71 (95% confidence interval 1.16 to 2.51, p = 0.005) for counts textgreater400 × 103/$mu$l. Further, a greater decrease in follow-up platelet counts (compared with baseline values) was independently associated with an increased risk of reinfarction at 30 days (odds ratio 1.44 for every decrease of 100 × 103/$mu$l unit of platelets, 95% confidence interval 1.13 to 1.82, p = 0.03). In conclusion, in STEMI, a higher platelet count on presentation was independently associated with adverse clinical outcomes, whereas a greater subsequent platelet count decrease was associated with an increased risk of reinfarction. textcopyright 2006 Elsevier Inc. All rights reserved."
+selected = false
+publication = "*American Journal of Cardiology*"
+doi = "10.1016/j.amjcard.2006.01.046"
++++
+

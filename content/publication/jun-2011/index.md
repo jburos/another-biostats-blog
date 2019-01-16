@@ -1,0 +1,11 @@
++++
+title = "Influence of ROBO1 and RORA on risk of age-related macular degeneration reveals genetically distinct phenotypes in disease pathophysiology"
+date = 2011-01-01
+authors = ["G. Jun", "M. Nicolaou", "M.A. Morrison", "J. Buros", "D.J. Morgan", "M.J. Radeke", "Y. Yonekawa", "E.E. Tsironi", "M.G. Kotoula", "F. Zacharaki", "N. Mollema", "Y. Yuan", "J.W. Miller", "N.B. Haider", "G.S. Hageman", "I.K. Kim", "D.A. Schaumberg", "L.A. Farrer", "M.M. DeAngelis"]
+publication_types = ["2"]
+abstract = "ROBO1 is a strong candidate gene for age-related macular degeneration (AMD) based upon its location under a linkage peak on chromosome 3p12, its expression pattern, and its purported function in a pathway that includes RORA, a gene previously associated with risk for neovascular AMD. Previously, we observed that expression of ROBO1 and RORA is down-regulated among wet AMD cases, as compared to their unaffected siblings. Thus, we hypothesized that contribution of association signals in ROBO1, and interaction between these two genes may be important for both wet and dry AMD. We evaluated association of 19 single nucleotide polymorphisms (SNPs) in ROBO1 with wet and dry stages of AMD in a sibling cohort and a Greek case-control cohort containing 491 wet AMD cases, 174 dry AMD cases and 411 controls. Association signals and interaction results were replicated in an independent prospective cohort (1070 controls, 164 wet AMD cases, 293 dry AMD cases). The most significantly associated ROBO1 SNPs were rs1387665 under an additive model (meta P = 0.028) for wet AMD and rs9309833 under a recessive model (meta P = 6×10 -4) for dry AMD. Further analyses revealed interaction between ROBO1 rs9309833 and RORA rs8034864 for both wet and dry AMD (interaction Ptextless0.05). These studies were further supported by whole transcriptome expression profile studies from 66 human donor eyes and chromatin immunoprecipitation assays from mouse retinas. These findings suggest that distinct ROBO1 variants may influence the risk of wet and dry AMD, and the effects of ROBO1 on AMD risk may be modulated by RORA variants. textcopyright 2011 Jun et al."
+selected = false
+publication = "*PLoS ONE*"
+doi = "10.1371/journal.pone.0025775"
++++
+

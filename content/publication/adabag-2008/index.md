@@ -1,0 +1,11 @@
++++
+title = "Occurrence and Frequency of Arrhythmias in Hypertrophic Cardiomyopathy in Relation to Delayed Enhancement on Cardiovascular Magnetic Resonance"
+date = 2008-01-01
+authors = ["A.S. Adabag", "B.J. Maron", "E. Appelbaum", "C.J. Harrigan", "J.L. Buros", "C.M. Gibson", "J.R. Lesser", "C.A. Hanna", "J.E. Udelson", "W.J. Manning", "M.S. Maron"]
+publication_types = ["2"]
+abstract = "Objectives: Our aim was to determine whether myocardial fibrosis, detected by cardiovascular magnetic resonance (CMR), represents an arrhythmogenic substrate in hypertrophic cardiomyopathy (HCM). Background: Myocardial fibrosis is identified frequently in HCM; however, the clinical significance of this finding is uncertain. Methods: We studied prevalence and frequency of tachyarrhythmias on 24-h ambulatory Holter electrocardiogram (ECG) with regard to delayed enhancement (DE) on contrast-enhanced CMR in 177 HCM patients (age 41 ± 16 yrs; 95% asymptomatic or mildly symptomatic). Results: Premature ventricular contractions (PVCs), couplets, and nonsustained ventricular tachycardia (NSVT) were more common in patients with DE than those without DE (PVCs: 89% vs. 72%; couplets: 40% vs. 17%; NSVT: 28% vs. 4%; p textless 0.0001 to 0.007). Patients with DE also had greater numbers of PVCs (202 ± 655 vs. 116 ± 435), couplets (1.9 ± 5 vs. 1.2 ± 10), and NSVT runs (0.4 ± 0.8 vs. 0.06 ± 0.4) than non-DE patients (all p textless 0.0001); DE was an independent predictor of NSVT (relative risk 7.3, 95% confidence interval 2.6 to 20.4; p textless 0.0001). However, extent (%) of DE was similar in patients with and without PVCs (8.2% vs. 9.1%; p = 0.93), couplets (8.5% vs. 8.4%; p = 0.99), or NSVT (8.3% vs. 8.5%; p = 0.35). Conclusions: In this large HCM cohort with no or only mild symptoms, myocardial fibrosis detected by CMR was associated with greater likelihood and increased frequency of ventricular tachyarrhythmias (including NSVT) on ambulatory Holter ECG. Therefore, contrast-enhanced CMR identifies HCM patients with increased susceptibility to ventricular tachyarrhythmias. textcopyright 2008 American College of Cardiology Foundation."
+selected = false
+publication = "*Journal of the American College of Cardiology*"
+doi = "10.1016/j.jacc.2007.11.071"
++++
+

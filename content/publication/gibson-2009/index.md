@@ -1,0 +1,11 @@
++++
+title = "Timing and Duration of Myocardial Ischemia on Holter Monitoring Following Percutaneous Coronary Intervention and Their Association With Clinical Outcomes (a PROTECT-TIMI 30 Substudy Analysis)"
+date = 2009-01-01
+authors = ["C.M. Gibson", "Y.B. Pride", "J.L. Buros", "L.N. Ciaglo", "D.A. Morrow", "B.M. Scirica", "P.H. Stone"]
+publication_types = ["2"]
+abstract = "In patients with unstable angina, evidence of myocardial ischemia on Holter monitoring is associated with an adverse prognosis. However, the association of duration and timing of ischemia on Holter monitoring with outcomes after percutaneous coronary intervention (PCI) in patients with non-ST-segment elevation acute coronary syndromes (NSTEACSs) has not been systematically evaluated. PROTECT-TIMI 30 randomized 857 patients with NSTEACSs undergoing PCI to eptifibatide plus a heparin product or bivalirudin monotherapy. Patients underwent continuous Holter monitoring following PCI, and the association between ischemia and clinical outcomes was evaluated retrospectively. Forty-three patients (5.0%) had ischemia on Holter after PCI. Any ischemia was associated with a significant increase in the incidence of death or myocardial infarction (MI) within 48 hours (32.6% vs 6.1%, odds ratio 7.5, 95% confidence interval 3.70 to 15.10, p textless0.001). In patients who developed ischemia, there was a 1.44-fold increase in the odds for death or MI for every 30 minutes of ischemia (95% confidence interval 1.12 to 1.84, p = 0.004). Duration of ischemic events was related to their timing, such that ischemic events that occurred within the first 4 hours after PCI (median duration 141 minutes, interquartile range 36 to 227.5) were significantly longer than events occurring 4 to 24 hours after PCI (median duration 32.8 minutes, interquartile range 17.5 to 118, p = 0.041). In conclusion, early ischemia after PCI for NSTEACS is of longer duration, and longer duration of ischemia recognized by Holter monitoring is associated with an increased incidence of death or MI. Holter monitoring may be a useful surrogate end point in clinical trials. textcopyright 2009 Elsevier Inc. All rights reserved."
+selected = false
+publication = "*American Journal of Cardiology*"
+doi = "10.1016/j.amjcard.2009.02.044"
++++
+

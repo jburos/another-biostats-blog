@@ -1,0 +1,12 @@
++++
+title = "Genome-wide association study of Alzheimer's disease"
+date = 2012-01-01
+authors = ["M.I. Kamboh", "F.Y. Demirci", "X. Wang", "R.L. Minster", "M.M. Carrasquillo", "V.S. Pankratz", "S.G. Younkin", "A.J. Saykin", "G. Jun", "C. Baldwin", "M.W. Logue", "J. Buros", "L. Farrer", "M.A. Pericak-Vance", "J.L. Haines", "R.A. Sweet", "M. Ganguli", "E. Feingold", "S.T. Dekosky", "O.L. Lopez", "M.M. Barmada"]
+publication_types = ["2"]
+abstract = "In addition to apolipoprotein E (APOE), recent large genome-wide association studies (GWASs) have identified nine other genes/loci (CR1, BIN1, CLU, PICALM, MS4A4/MS4A6E, CD2AP, CD33, EPHA1 and ABCA7) for late-onset Alzheimer's disease (LOAD). However, the genetic effect attributable to known loci is about 50%, indicating that additional risk genes for LOAD remain to be identified. In this study, we have used a new GWAS data set from the University of Pittsburgh (1291 cases and 938 controls) to examine in detail the recently implicated nine new regions with Alzheimer's disease (AD) risk, and also performed a meta-analysis utilizing the top 1% GWAS single-nucleotide polymorphisms (SNPs) with P textless 0.01 along with four independent data sets (2727 cases and 3336 controls) for these SNPs in an effort to identify new AD loci. The new GWAS data were generated on the Illumina Omni1-Quad chip and imputed at ∼2.5 million markers. As expected, several markers in the APOE regions showed genome-wide significant associations in the Pittsburg sample. While we observed nominal significant associations (P0.05) either within or adjacent to five genes (PICALM, BIN1, ABCA7, MS4A4/MS4A6E and EPHA1), significant signals were observed 69-180 kb outside of the remaining four genes (CD33, CLU, CD2AP and CR1). Meta-analysis on the top 1% SNPs revealed a suggestive novel association in the PPP1R3B gene (top SNP rs3848140 with P=3.05E-07). The association of this SNP with AD risk was consistent in all five samples with a meta-analysis odds ratio of 2.43. This is a potential candidate gene for AD as this is expressed in the brain and is involved in lipid metabolism. These findings need to be confirmed in additional samples. textcopyright 2012 Macmillan Publishers Limited All rights reserved."
+selected = false
+publication = "*Translational Psychiatry*"
+tags = ["[Alzheimer's disease", "genome-wide association stud"]
+doi = "10.1038/tp.2012.45"
++++
+

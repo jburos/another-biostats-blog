@@ -1,0 +1,11 @@
++++
+title = "Multiple loci influencing hippocampal degeneration identified by genome scan"
+date = 2012-01-01
+authors = ["S.A. Melville", "J. Buros", "A.R. Parrado", "B. Vardarajan", "M.W. Logue", "L. Shen", "S.L. Risacher", "S. Kim", "G. Jun", "C. Decarli", "K.L. Lunetta", "C.T. Baldwin", "A.J. Saykin", "L.A. Farrer"]
+publication_types = ["2"]
+abstract = "Objective: Large genome-wide association studies (GWASs) have identified many novel genes influencing Alzheimer disease (AD) risk, but most of the genetic variance remains unexplained. We conducted a 2-stage GWAS for AD-related quantitative measures of hippocampal volume (HV), total cerebral volume (TCV), and white matter hyperintensities (WMH). Methods: Brain magnetic resonance imaging measures of HV, TCV, and WMH were obtained from 981 Caucasian and 419 African American AD cases and their cognitively normal siblings in the MIRAGE (Multi Institutional Research in Alzheimer's Genetic Epidemiology) Study, and from 168 AD cases, 336 individuals with mild cognitive impairment, and 188 controls in the Alzheimer's Disease Neuroimaging Initiative Study. A GWAS for each trait was conducted in the 2 Caucasian data sets in stage 1. Results from the 2 data sets were combined by meta-analysis. In stage 2, 1 single nucleotide polymorphism (SNP) from each region that was nominally significant in each data set (p textless 0.05) and strongly associated in both data sets (p textless 1.0 × 10 -5) was evaluated in the African American data set. Results: Twenty-two markers (14 for HV, 3 for TCV, and 5 for WMH) from distinct regions met criteria for evaluation in stage 2. Novel genome-wide significant associations (p textless 5.0 × 10 -8) were attained for HV with SNPs in the APOE, F5/SELP, LHFP, and GCFC2 gene regions. All of these associations were supported by evidence in each data set. Associations with different SNPs in the same gene (p textless 1 × 10 -5 in Caucasians and p textless 2.2 × 10 -4 in African Americans) were also observed for PICALM with HV, SYNPR with TCV, and TTC27 with WMH. Interpretation: Our study demonstrates the efficacy of endophenotypes for broadening our understanding of the genetic basis of AD. textcopyright 2012 American Neurological Association."
+selected = false
+publication = "*Annals of Neurology*"
+doi = "10.1002/ana.23644"
++++
+

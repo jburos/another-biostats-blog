@@ -9,17 +9,17 @@ title = "Recent Publications"
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 20
+weight = 30
 
 # Number of publications to list.
-count = 10
+count = 6
 
 # List format.
 #   0 = Simple
 #   1 = Detailed
 #   2 = APA
 #   3 = MLA
-list_format = 3
+list_format = 0
 
 # Filter by publication type.
 # -1: Any

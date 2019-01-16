@@ -1,0 +1,11 @@
++++
+title = "Administration of intracoronary Eptifibatide during ST-elevation myocardial infarction"
+date = 2005-01-01
+authors = ["D.S. Pinto", "A.J. Kirtane", "N.A. Ruocco", "A.J. Deibele", "A. Shui", "J. Buros", "S.A. Murphy", "C.M. Gibson"]
+publication_types = ["2"]
+abstract = "Distal embolization of atherothrombotic material during primary percutaneous coronary intervention (PCI) is associated with impaired myocardial perfusion, abnormal left ventricular function, and higher mortality. At high local concentrations, glycoprotein IIb/IIIa receptor antagonists have been demonstrated to promote clot disaggregation in vitro. Intracoronary administration of eptifibatide in vivo may increase local drug concentration by several orders of magnitude and promote clot disaggregation with a minimal increase in systemic drug concentrations. We hypothesized that intracoronary administration of eptifibatide before primary PCI for ST-elevation myocardial infarction would be safe and would be associated with high rates of normal myocardial perfusion. Clinical and angiographic data were pooled from patients who underwent primary PCI and received intracoronary eptifibatide as part of clinical practice. In-hospital adverse events were collected retrospectively. No deaths, urgent revascularizations, or reinfarctions were observed among the 59 patients who were treated with intracoronary eptifibatide. There were no Thrombolysis In Myocardial Infarction (TIMI) major bleeding events. Two TIMI minor bleeding events were noted. Normal TIMI myocardial perfusion grade 3 flow after PCI was noted in 54.4% of patients. No adverse events. including arrhythmias, were noted during intracoronary eptifibatide administration. In conclusion, intracoronary eptifibatide can be administered safely during primary PCI and is associated with few adverse events. Relatively high rates of normal myocardial perfusion were observed after primary PCI with adjunctive intracoronary eptifibatide. Further prospective randomized trials are warranted to evaluate the efficacy and safety of intracoronary eptifibatide. textcopyright 2005 Elsevier Inc. All rights reserved."
+selected = false
+publication = "*American Journal of Cardiology*"
+doi = "10.1016/j.amjcard.2005.07.056"
++++
+

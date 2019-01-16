@@ -1,0 +1,12 @@
++++
+title = "Angiographic perfusion score in patients treated with PCI at late angiography following fibrinolytic administration for ST-segment elevation myocardial infarction is associated with morbidity and mortality at 30 days"
+date = 2008-01-01
+authors = ["Y.B. Pride", "J.L. Buros", "E. Lord", "M.C. Southard", "C.J. Harrigan", "L.N. Ciaglo", "M.S. Sabatine", "C.P. Cannon", "C.M. Gibson"]
+publication_types = ["2"]
+abstract = "Background: Among patients with ST-segment elevation myocardial infarction (STEMI), evidence of restoration of both normal epicardial arterial flow and myocardial perfusion early after the administration of fibrinolytic agents has been associated with improved clinical outcomes. In STEMI patients treated with fibrinolytic therapy and scheduled for angiography later during hospital admission, however, the association of later indices of flow and perfusion with clinical outcomes has not been assessed. Methods: Clopidogrel as Adjunctive Reperfusion Therapy-Thrombolysis in Myocardial Infarction (CLARITY-TIMI) 28 enrolled 3,491 STEMI patients treated with fibrinolytic therapy. Angiography was scheduled 48-192 h (median 84) after randomization. The Angiographic Perfusion Score (APS) (the sum of the TIMI Flow Grade and Myocardial Perfusion Grade before and after percutaneous coronary intervention (PCI), range of 0-12) was assessed in the 1,460 patients treated with PCI at late angiography, and its association with morbidity and mortality at 30 days was examined. Results: Full perfusion, defined as an APS of 10-12, was associated with the lowest mortality (0.8%), while partial perfusion (APS 4-9) (2.3%) and failed perfusion (APS 0-3) (18.0%) were associated with a higher incidence of mortality at 30 days (P textless 0.001 for full perfusion vs. partial perfusion, P textless 0.0001 for overall trend). In addition, full perfusion was associated with a lower incidence of recurrent myocardial infarction (MI), a composite of death and MI, recurrent myocardial ischemia, ventricular tachyarrhythmia, congestive heart failure and shock (P textless 0.05 for all trends). Conclusion: Among STEMI patients treated with late PCI following fibrinolytic therapy, higher APS is associated with reduced morbidity and mortality. textcopyright Springer Science+Business Media, LLC 2007."
+selected = false
+publication = "*Journal of Thrombosis and Thrombolysis*"
+tags = ["[Angiographic Perfusion Score", "ST-segment elevatio"]
+doi = "10.1007/s11239-007-0075-z"
++++
+

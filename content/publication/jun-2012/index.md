@@ -1,0 +1,11 @@
++++
+title = "$delta$-Catenin Is Genetically and Biologically Associated with Cortical Cataract and Future Alzheimer-Related Structural and Functional Brain Changes"
+date = 2012-01-01
+authors = ["G. Jun", "J.A. Moncaster", "C. Koutras", "S. Seshadri", "J. Buros", "A.C. McKee", "G. Levesque", "P.A. Wolf", "P. St. George-Hyslop", "L.E. Goldstein", "L.A. Farrer"]
+publication_types = ["2"]
+abstract = "Multiple lines of evidence suggest that specific subtypes of age-related cataract (ARC) and Alzheimer disease (AD) are related etiologically. To identify shared genetic factors for ARC and AD, we estimated co-heritability of quantitative measures of cataract subtypes with AD-related brain MRI traits among 1,249 members of the Framingham Eye Study who had a brain MRI scan approximately ten years after the eye exam. Cortical cataract (CC) was found to be co-heritable with future development of AD and with several MRI traits, especially temporal horn volume (THV, $h̊o$ = 0.24, Ptextless10-4). A genome-wide association study using 187,657 single nucleotide polymorphisms (SNPs) for the bivariate outcome of CC and THV identified genome-wide significant association with CTNND2 SNPs rs17183619, rs13155993 and rs13170756 (Ptextless2.6×10-7). These SNPs were also significantly associated with bivariate outcomes of CC and scores on several highly heritable neuropsychological tests (5.7×10-9≤Ptextless3.7×10-6). Statistical interaction was demonstrated between rs17183619 and APP SNP rs2096488 on CC (P = 0.0015) and CC-THV (P = 0.038). A rare CTNND2 missense mutation (G810R) 249 base pairs from rs17183619 altered $delta$-catenin localization and increased secreted amyloid-$beta$1-42 in neuronal cell culture. Immunohistopathological analysis of lens tissue obtained from two autopsy-confirmed AD subjects and two non-AD controls revealed elevated expression of $delta$-catenin in epithelial and cortical regions of lenses from AD subjects compared to controls. Our findings suggest that genetic variation in delta catenin may underlie both cortical lens opacities in mid-life and subsequent MRI and cognitive changes that presage the development of AD. textcopyright 2012 Jun et al."
+selected = true
+publication = "*PLoS ONE*"
+doi = "10.1371/journal.pone.0043728"
++++
+

@@ -1,0 +1,11 @@
++++
+title = "Significance of Papillary Muscle Abnormalities Identified by Cardiovascular Magnetic Resonance in Hypertrophic Cardiomyopathy"
+date = 2008-01-01
+authors = ["C.J. Harrigan", "E. Appelbaum", "B.J. Maron", "J.L. Buros", "C.M. Gibson", "J.R. Lesser", "J.E. Udelson", "W.J. Manning", "M.S. Maron"]
+publication_types = ["2"]
+abstract = "Increased thickness of the left ventricular (LV) wall is the predominant feature of the hypertrophic cardiomyopathy (HC) phenotype. The structural characteristics of the LV papillary muscles (PMs) have received little attention. In this study, cardiovascular magnetic resonance (CMR) was used to characterize PM morphology in a large HC population. Cine and delayed enhancement (DE) CMR images were obtained in 201 patients with HC and 43 control subjects. PM number and mass index were greater in patients with HC compared with controls (2.5 vs 2.1, p textless0.001, and 6 ± 2 vs 3 ± 2 g/m                        2, p textless0.001, respectively), including 109 (54%) with PM mass ≥7 g/m                        2 (≥2 SDs above the mean for controls). Greater LV wall mass index was associated with more substantial PM mass (r = 0.09, p textless0.001). Furthermore, 12 patients with HC (19%) had normal LV mass with localized wall thickness but increased PM mass. In patients with HC with LV outflow obstruction at rest, PMs were positioned closer to the ventricular septum (displaced anteriorly: 58% vs 42% for subjects without obstruction, p = 0.02), with more marked hypertrophy (9 ± 5 vs 6 ± 4 g/m                        2, p textless0.001). Preoperative CMR identified 3 patients with accessory, anteriorly displaced PMs judged to contribute to outflow obstruction, which were resected during septal myectomy. DE of the PMs was identified in 13 patients with HC (6%), including 3 with DE confined to PMs. In conclusion, CMR demonstrates LV PMs to be part of the cardiomyopathic process in HC, with increases in number and mass, and not uncommonly associated with remodeling with DE. The identification of accessory PMs may be useful in planning preoperative strategy. textcopyright 2008 Elsevier Inc. All rights reserved."
+selected = false
+publication = "*American Journal of Cardiology*"
+doi = "10.1016/j.amjcard.2007.10.032"
++++
+
