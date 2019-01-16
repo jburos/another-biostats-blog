@@ -10,31 +10,21 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Bayesian Statistics",
+    "Computational Biology",
+    "Translational Medicine"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "BA in Biological Sciences"
+  institution = "Dartmouth College"
+  year = 2003
 
-[[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
-
-[[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
- 
 +++
 
-# Biography
+# About me
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am a computational biologist and statistician at the [Institute for Next Generation Healthcare](http://www.nextgenhealthcare.org/) at Mt. Sinai Hospital in NYC. Previously I worked as a senior biostatistian at the [Hammer Lab](http://www.hammerlab.org/) with a focus on onco-immunology. In past roles, I have been a Director of Data Science & Strategic Analytics at Penguin Random House, a computational biologist at Boston University, and a clinical researcher at Harvard University. See my list of publications [on orcid](http://orcid.org/0000-0001-9588-4889) and [on researchgate](https://www.researchgate.net/profile/Jacki_Buros2).
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+I am passionate about programming and use R, Stan, and to some extent Python in my day-to-day work. I am the author of the Python packages [SurvivalStan](https://jburos.github.io/survivalstan/index.html), [stanity](https://github.com/hammerlab/stanity), and [stancache](https://github.com/hammerlab/stancache). I am a contributor to the R packages [rstanarm](http://mc-stan.org/rstanarm/) and [GoogleComputeEngineR](https://cloudyr.github.io/googleComputeEngineR/) and to the Python package [cohorts](https://github.com/hammerlab/cohorts).
