@@ -116,7 +116,7 @@ enableGitInfo = true
   sharing_image = ""
 
   # Twitter username (without @). Used when a vistor shares your site on Twitter.
-  twitter = "jackinovik"
+  twitter = "jackiburos"
 
   # Diplay a logo in navigation bar rather than title (optional).
   #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
@@ -331,10 +331,10 @@ enableGitInfo = true
 #  url = "#teaching"
 #  weight = 5
 
-#[[menu.main]]
-#  name = "Contact"
-#  url = "#contact"
-#  weight = 5
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 5
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
