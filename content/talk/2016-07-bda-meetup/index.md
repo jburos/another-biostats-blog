@@ -1,5 +1,5 @@
 +++
-title = "Survival analysis with Stan (BDA meetup)"
+title = "Survival analysis with Stan"
 date = 2019-01-01T00:00:00  # Schedule page publish date.
 draft = false
 
