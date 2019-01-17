@@ -9,7 +9,7 @@ time_start = 2016-06-26T18:30:00
 #time_end = 2016-06-26T20:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Jacqueline Buros Novik""]
+authors = ["Jacqueline Buros Novik"]
 
 abstract_short = "This workshop will provide a background and introduction to Bayesian analysis using Stan and R interfaces to Stan."
 
