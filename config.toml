@@ -50,14 +50,6 @@ enableGitInfo = true
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
 
 [params]
-  # Color theme.
-  #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "ocean"
-
-  # Font style.
-  #   Choose from `default`, `classic`, or `playfair`.
-  font = "default"
-
   # Your details.
   name = "Jacqueline Buros Novik"
   role = "Computational Biologist / Biostatistician"
