@@ -116,7 +116,7 @@ enableGitInfo = true
   sharing_image = ""
 
   # Twitter username (without @). Used when a vistor shares your site on Twitter.
-  twitter = ""
+  twitter = "jackinovik"
 
   # Diplay a logo in navigation bar rather than title (optional).
   #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
@@ -168,7 +168,7 @@ enableGitInfo = true
   #   https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
   highlight = true
   highlight_languages = ["stan", "r", "python"]
-  # highlight_style = "github"
+  highlight_style = "github"
 
   # Enable native social sharing buttons?
   sharing = true
@@ -203,7 +203,7 @@ enableGitInfo = true
   # Configuration of talk pages.
   [params.talks]
     # Show talk time?
-    time = true
+    time = false
 
   # Configuration of publication pages.
   [params.publications]
@@ -262,7 +262,7 @@ enableGitInfo = true
   [[params.social]]
     icon = "twitter"
     icon_pack = "fab"
-    link = "//twitter.com/jackiburos"
+    link = "https://twitter.com/jackiburos"
 
   [[params.social]]
     icon = "google-scholar"
@@ -272,17 +272,17 @@ enableGitInfo = true
   [[params.social]]
     icon = "github"
     icon_pack = "fab"
-    link = "//github.com/jburos"
+    link = "https://github.com/jburos"
 
   [[params.social]]
     icon = "orcid"
     icon_pack = "ai"
-    link = "//orcid.org/0000-0001-9588-4889"
+    link = "https://orcid.org/0000-0001-9588-4889"
 
   [[params.social]]
     icon = "researchgate"
     icon_pack = "ai"
-    link = "//www.researchgate.net/profile/Jacki_Buros2"
+    link = "https://www.researchgate.net/profile/Jacki_Buros2"
 
 
 
@@ -331,10 +331,10 @@ enableGitInfo = true
 #  url = "#teaching"
 #  weight = 5
 
-[[menu.main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 5
+#[[menu.main]]
+#  name = "Contact"
+#  url = "#contact"
+#  weight = 5
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
