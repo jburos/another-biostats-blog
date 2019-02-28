@@ -2,6 +2,12 @@
 title: Introducing Survivalstan
 layout: post
 date: 2017-06-23
+categories:
+  - Survival analysis
+tags:
+  - survival analysis
+  - stan
+author: Jacqueline Buros
 ---
 
 Survival analysis is an important and useful tool in biostatistics. It is commonly used in the analysis of clinical trial data, where the **time to a clinical event** is a primary endpoint. This endpoint may or may not be observed for all patients during the study's follow-up period.
