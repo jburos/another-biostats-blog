@@ -1,7 +1,7 @@
 ---
 title: Parameterizing the Weibull for proportional hazards
 author: Jacqueline Buros
-date: '2019-02-28'
+date: '2019-02-27'
 slug: parameterizing-the-weibull-proportional-hazards
 categories:
   - Survival analysis
@@ -10,7 +10,6 @@ tags:
   - stan
   - weibull
 bibliography: bibliography.bib
-layout: post
 link-citations: true
 ---
 
