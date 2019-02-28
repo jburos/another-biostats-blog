@@ -1,0 +1,138 @@
+---
+title: Parameterizing the Weibull for proportional hazards
+author: Jacqueline Buros
+date: '2019-02-27'
+slug: parameterizing-the-weibull-proportional-hazards
+categories:
+  - Survival analysis
+tags:
+  - survival analysis
+  - stan
+  - weibull
+bibliography: bibliography.bib
+link-citations: true
+---
+
+
+
+<p>I received a question the other day by email regarding the parameterization of the <a href="https://github.com/hammerlab/survivalstan/blob/master/survivalstan/stan/weibull_survival_model.stan">Weibull survival model</a> which is included in both <a href="https://jburos.github.io/survivalstan/index.html">SurvivalStan</a> (a Python package) and <a href="https://github.com/jburos/biostan">biostan</a>, an R mini-package I put together for a BioConductor workshop held in 2016.</p>
+<p>The question read:</p>
+<blockquote>
+<p>Hi Jacki,</p>
+<p>I wonder if you might be able to help me with a question? I have been looking at stan recently for survival models and I noticed the biostan repository, which is quite a helpful resource. However, the Weibull models contain a parameterisation that I am not familiar with whereby the scale parameter is specified as <code>exp(-(mu)/alpha)</code>, highlighted below. Are you able to explain where this comes from and why it is used?</p>
+<p>Many thanks</p>
+<p>Mark</p>
+</blockquote>
+<p>Since the parameterization used here is fairly standard practice for implementing Weibull survival models in Stan, I thought it would useful to share here my response.</p>
+<p>Here is the full Stan code for this model :</p>
+<pre>
+data {
+  int<lower=0> Nobs;
+  int<lower=0> Ncen;
+  vector[Nobs] yobs;
+  vector[Ncen] ycen;
+}
+transformed data {
+  real<lower=0> tau_mu;
+  real<lower=0> tau_al;
+  tau_mu = 10.0;
+  tau_al = 10.0;
+}
+parameters {
+  real alpha_raw;
+  real mu;
+}
+transformed parameters {
+  real alpha;
+  alpha = exp(tau_al * alpha_raw);
+}
+model {
+  // yobs ~ weibull(alpha, exp(-(mu)/alpha));
+  target += weibull_lpdf( yobs | alpha, <span style="color:blue">exp(-(mu)/alpha)</span>);
+  
+  // the lccdf is the complementary cumulative dist = 1 -Fx = survival function
+  target += weibull_lccdf(ycen | alpha, <span style="color:blue">exp(-(mu)/alpha)</span>);
+  
+  alpha_raw ~ normal(0.0, 1.0);
+  mu ~ normal(0.0, tau_mu);
+}
+</pre>
+<p>The relevant section is higlighted above and appears in the <code>model</code> block twice: <code>exp(-(mu)/alpha)</code>.</p>
+<p>There are two parts to Mark’s question:</p>
+<ol style="list-style-type: decimal">
+<li>Where did this come from?</li>
+<li>Why is it parameterized like this?</li>
+</ol>
+<p>I will start with the response to the first question, which is that I borrowed this from the parameterization used in the <a href="https://github.com/stan-dev/example-models" class="uri">https://github.com/stan-dev/example-models</a> repository, specifically the one based on the <a href="http://www.openbugs.net/Examples/Mice.html">mice</a> model from the BUGS example models, re-parameterized for Stan <a href="https://github.com/stan-dev/example-models/tree/master/bugs_examples/vol1/mice">here</a>.</p>
+<p>As to the second question, this is easier to see given the parameterization in the BUGS example <code>mu = exp(Bz)</code>; the short answer is that it leads to proportional hazards. The expression in Stan <code>sigma = exp(-Bz/alpha)</code> is a direct translation of the BUGS model, given how the weibull pdfs are implemented in Stan and BUGS.</p>
+<p>Before going into detail on the proportional hazards, let’s review the parameterizations to confirm they are equivalent.</p>
+<div id="the-weibull-in-bugs-vs-stan" class="section level3">
+<h3>The Weibull in BUGS vs Stan</h3>
+<p>Paraphrasing this <a href="https://stats.stackexchange.com/questions/18550/how-do-i-parameterize-a-weibull-distribution-in-jags-bugs">SO question</a>,</p>
+<p><a href="https://mc-stan.org/docs/2_18/functions-reference/weibull-distribution.html">Stan’s parameterization</a> of <code>weibull_lpdf(x | a, b)</code> with (a = <span class="math inline">\(\alpha\)</span>, b = <span class="math inline">\(\sigma\)</span>) is:</p>
+<p><span class="math display">\[ (^a/_b)(^x/_b)^{a-1} \text{exp}(- (^x/_b)^a) \]</span></p>
+<p>Whereas the <a href="https://www.mrc-bsu.cam.ac.uk/wp-content/uploads/manual14.pdf">BUGS parameterization</a> of <code>x ~ weibull(ν, λ)</code> is:</p>
+<p><span class="math display">\[ \nu \lambda x^{\nu-1}\text{exp}(-\lambda x^\nu) \]</span></p>
+</div>
+<div id="is-our-version-of-the-model-equivalent" class="section level3">
+<h3>Is our version of the model equivalent?</h3>
+<p>To test whether the Stan model above is consistent with the parameterization given in the BUGS example, let’s consider a survival model with a linear predictor <code>mu = Bz</code>.</p>
+<div id="our-stan-model-has" class="section level4">
+<h4>Our Stan model has:</h4>
+<ul>
+<li><code>weibull_lpdf(x | a, b)</code></li>
+<li><code>b = exp(-mu/a)</code></li>
+</ul>
+<p>Substituting into the PDF according to R/Stan is:</p>
+<p><span class="math display">\[ 
+     \displaystyle\frac{a}{{b}}\cdot{\left(\frac{x}{{b}}\right)}^{{{a}-{1}}}\cdot \exp{{\left(-{\left(\frac{x}{{b}}\right)}^{a}\right)}} \\
+   = \displaystyle\frac{a}{ \exp{{\left(-\frac{\mu}{{a}}\right)}}}{\left(\frac{x}{ \exp{{\left(-\frac{\mu}{{a}}\right)}}}\right)}^{{{a}-{1}}} \exp{{\left(-{\left(\frac{x}{ \exp{{\left(-\frac{\mu}{{a}}\right)}}}\right)}^{a}\right)}} 
+  \]</span></p>
+<p>Which simplifies to (per <a href="https://www.wolframalpha.com/input/?i=simplify%5Ba%2F(exp(-mu%2Fa))+*+(x%2F(exp(-mu%2Fa)))%5E(a-1)+*+exp(-(x%2F(exp(-mu%2Fa)))%5Ea)%5D">wolfram-alpha</a>):</p>
+<p><span class="math display">\[
+   = \displaystyle{a}{x}^{{{a}-{1}}}{e}^{{\mu-{e}^{\mu}{x}^{a}}}
+  \]</span></p>
+</div>
+<div id="the-analogous-bugs-mice-model-would-be" class="section level4">
+<h4>The analogous BUGS mice model would be:</h4>
+<ul>
+<li><code>x ~ weibull(a, lambda)</code></li>
+<li><code>lambda = exp(mu)</code></li>
+</ul>
+<p>Substituting these terms into the PDF according to BUGS yields:</p>
+<p><span class="math display">\[
+     \displaystyle{a}λ{x}^{{{a}-{1}}} \exp{{\left(-λ{x}^{a}\right)}} \\
+    = \displaystyle{a} \exp{{\left(\mu\right)}}{x}^{{{a}-{1}}} \exp{{\left(- \exp{{\left(\mu\right)}}{x}^{a}\right)}} \\
+  \]</span></p>
+<p>Which simplifies to (per <a href="https://www.wolframalpha.com/input/?i=simplify%5Ba*exp(mu)*x%5E(a-1)*exp(-1*exp(mu)*x%5Ea)%5D">wolfram alpha</a>):</p>
+<p><span class="math display">\[
+    = \displaystyle\frac{{{a}{e}^{{-{\left({x}{e}^{{\frac{\mu}{{a}}}}\right)}^{a}}}{\left({x}{e}^{{\frac{\mu}{{a}}}}\right)}^{a}}}{{x}} \\
+    = \displaystyle{a}{x}^{{{a}-{1}}}{e}^{{\mu-{e}^{\mu}{x}^{a}}}
+  \]</span></p>
+<p>Thus the two parameterizations are equivalent.</p>
+</div>
+</div>
+<div id="but-why-the-gymnastics-to-implement-the-bugs-example" class="section level3">
+<h3>But, why the gymnastics to implement the BUGS example?</h3>
+<p>Now that we have established that the two parameterizations are equivalent, we can better understand how setting <code>sigma = exp(-mu/a)</code> leads to proportional hazards.</p>
+<p>Using the syntax of the BUGS implementation, the hazard at time <span class="math inline">\(x\)</span> is proportional to the value of <span class="math inline">\(\lambda\)</span>:</p>
+<p><span class="math display">\[ \displaystyle{h}{\left({x}{|}{a},λ\right)}={a}λ{x}^{{{a}-{1}}} \]</span></p>
+<p>By setting <code>lambda = exp(mu)</code>, we get a standard proportional hazards model with a shape depending on the parameter <code>a</code>.</p>
+<p>For example, the hazard for a model with <code>mu = Xb</code> where we have a single single binary covariate and an estimated <span class="math inline">\(\beta\)</span> = 0.4 is proportional on the log-scale as expected.</p>
+<div class="figure"><span id="fig:plot-hazard"></span>
+<img src="/post/2019-02-28-parameterizing-the-weibull-proportional-hazards_files/figure-html/plot-hazard-1.png" alt="log(Hazard) values for a hypothetical Weibull PH survival model with $eta$ = 0.4 for several values of a." width="672" />
+<p class="caption">
+Figure 1: log(Hazard) values for a hypothetical Weibull PH survival model with <span class="math inline">\(eta\)</span> = 0.4 for several values of a.
+</p>
+</div>
+<p>The shape of the hazard depends on the value of <code>a</code> – increasing when a &gt; 0 and decreasing when 0 &gt; a &gt; 1.</p>
+<p>There isn’t a ton of flexibility re: the shape of the hazard with the Weibull, but it has a number of nice properties <span class="citation">(Carroll <a href="#ref-carrollUseUtilityWeibull2003">2003</a>)</span> making it a standard tool in parametric survival analysis.</p>
+</div>
+<div id="references" class="section level3 unnumbered">
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-carrollUseUtilityWeibull2003">
+<p>Carroll, Kevin J. 2003. “On the Use and Utility of the Weibull Model in the Analysis of Survival Data.” <em>Controlled Clinical Trials</em> 24 (6): 682–701. <a href="https://doi.org/10.1016/S0197-2456(03)00072-2">https://doi.org/10.1016/S0197-2456(03)00072-2</a>.</p>
+</div>
+</div>
+</div>
