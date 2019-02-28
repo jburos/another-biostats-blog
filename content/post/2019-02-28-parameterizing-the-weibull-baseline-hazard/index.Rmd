@@ -10,17 +10,17 @@ tags:
   - stan
   - weibull
 bibliography: bibliography.bib
-output: blogdown::html_page
+link-citations: true
 ---
 
 ```{r setup, include = F}
 library(tidyverse)
+knitr::opts_chunk$set(tidy = FALSE, echo = FALSE)
 ```
 
 I received a question the other day by email regarding the parameterization of the [Weibull survival model](https://github.com/hammerlab/survivalstan/blob/master/survivalstan/stan/weibull_survival_model.stan) which is included in both  [SurvivalStan](https://jburos.github.io/survivalstan/index.html) (a Python package) and [biostan](https://github.com/jburos/biostan), an R mini-package I put together for a BioConductor workshop held in 2016.
 
 The question read:
-
 
 > Hi Jacki,
 > 
@@ -148,7 +148,7 @@ By setting `lambda = exp(mu)`, we get a standard proportional hazards model with
 
 For example, the hazard for a model with `mu = Xb` where we have a single single binary covariate and an estimated $\beta$ = 0.4 is proportional on the log-scale as expected.
 
-```{r plot-hazard}
+```{r plot-hazard, fig.cap = 'log(Hazard) values for a hypothetical Weibull PH survival model with $\beta$ = 0.4 for several values of a.'}
 d <- expand.grid(list(x = c(0, 1),
                       b = c(0.4),
                       a = c(0.6, 0.8, 1, 1.2),
@@ -164,8 +164,8 @@ ggplot(d, aes(x = time, y = log_hazard, group = group, colour = group)) + geom_l
   facet_wrap(~ a, labeller = label_both)
 ```
 
-The shape of the hazard depends on the value of `a` -- increasing when a>0 and decreasing when 0>a>1. 
- 
+The shape of the hazard depends on the value of `a` -- increasing when a > 0 and decreasing when 0 > a > 1. 
+
 There isn't a ton of flexibility re: the shape of the hazard with the Weibull, but it has a number of nice properties [@carrollUseUtilityWeibull2003] making it a standard tool in parametric survival analysis. 
 
 ### References
